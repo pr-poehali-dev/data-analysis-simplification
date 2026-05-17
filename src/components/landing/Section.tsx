@@ -2,9 +2,9 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import type { SectionProps } from "@/types"
 
-export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText }: SectionProps) {
+export default function Section({ id, title, subtitle, content, extra, isActive, showButton, buttonText }: SectionProps) {
   return (
-    <section id={id} className="relative h-screen w-full snap-start flex flex-col justify-center p-8 md:p-16 lg:p-24">
+    <section id={id} className="relative min-h-screen w-full snap-start flex flex-col justify-center p-8 md:p-16 lg:p-24 py-16">
       {subtitle && (
         <motion.div
           className="mb-12"
@@ -33,6 +33,7 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
           {content}
         </motion.p>
       )}
+      {extra && extra}
       {showButton && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}

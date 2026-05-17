@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge"
+import BudgetCalculator from "./BudgetCalculator"
 
 export const sections = [
   {
@@ -11,7 +12,7 @@ export const sections = [
   {
     id: 'budget',
     title: 'Мой бюджет.',
-    content: 'Введи доходы и расходы по категориям — стипендия, подработка, еда, транспорт, аренда. Сервис покажет, куда уходят деньги и где можно сэкономить.'
+    extra: <BudgetCalculator />
   },
   {
     id: 'calculators',
