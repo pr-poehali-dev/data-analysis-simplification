@@ -5,7 +5,22 @@ export const sections = [
   {
     id: 'hero',
     subtitle: <Badge variant="outline" className="text-white border-white/40">Учебный проект · Экономический факультет · РУТ МИИТ</Badge>,
-    title: "Экономика студента.",
+    title: (
+      <span>
+        {'Экономика студента!'.split('').map((char, i) => {
+          const colors = [
+            '#f9a8d4','#fca5a1','#fdba74','#fde68a',
+            '#a7f3d0','#99f6e4','#93c5fd','#c4b5fd',
+            '#f9a8d4','#fca5a1','#fdba74','fde68a',
+            '#a7f3d0','#99f6e4','#93c5fd','#c4b5fd',
+            '#f9a8d4','#fca5a1','#fdba74'
+          ]
+          return char === ' '
+            ? <span key={i}>&nbsp;</span>
+            : <span key={i} style={{ color: colors[i % colors.length] }}>{char}</span>
+        })}
+      </span>
+    ),
     showButton: true,
     buttonText: 'Начать анализ бюджета'
   },
