@@ -14,6 +14,7 @@ export const sections = [
         <span style={{ color: '#ffffff' }}>студента!</span>
       </span>
     ),
+    centered: true,
     showButton: true,
     buttonText: 'Начать анализ бюджета'
   },
