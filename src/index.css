@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
