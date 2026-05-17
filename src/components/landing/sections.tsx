@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge"
 import BudgetCalculator from "./BudgetCalculator"
+import AnalyticsCharts from "./AnalyticsCharts"
 
 export const sections = [
   {
@@ -36,8 +37,9 @@ export const sections = [
   },
   {
     id: 'analytics',
-    title: 'Аналитика.',
-    content: 'Круговые диаграммы расходов, столбчатые графики по месяцам, сравнение «экономного» и «обычного» месяца — всё наглядно и понятно.'
+    title: 'Аналитика',
+    centered: true,
+    extra: <AnalyticsCharts />
   },
   {
     id: 'tips',
