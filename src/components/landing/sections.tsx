@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import BudgetCalculator from "./BudgetCalculator"
 import AnalyticsCharts from "./AnalyticsCharts"
+import Calculators from "./Calculators"
 
 export const sections = [
   {
@@ -33,7 +34,7 @@ export const sections = [
   {
     id: 'calculators',
     title: 'Калькуляторы.',
-    content: 'Калькулятор накоплений, переплаты по кредиту, влияния инфляции и выгоды скидки. Считай финансовые решения до того, как их принять.'
+    extra: <Calculators />
   },
   {
     id: 'analytics',
