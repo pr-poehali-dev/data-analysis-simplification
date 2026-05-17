@@ -29,12 +29,14 @@ export const sections = [
   },
   {
     id: 'budget',
-    title: 'Мой бюджет.',
+    title: 'Мой бюджет',
+    centered: true,
     extra: <BudgetCalculator />
   },
   {
     id: 'calculators',
-    title: 'Калькуляторы.',
+    title: 'Калькуляторы',
+    centered: true,
     extra: <Calculators />
   },
   {
@@ -45,12 +47,14 @@ export const sections = [
   },
   {
     id: 'tips',
-    title: 'Советы.',
+    title: 'Советы',
+    centered: true,
     extra: <Tips />
   },
   {
     id: 'about',
-    title: 'О проекте.',
+    title: 'О проекте',
+    centered: true,
     content: 'Сайт создан студентами экономического факультета, как учебный проект по теме личных финансов и финансовой грамотности. Над проектом работали Туманс Анастасия, Васильев Александр, Веселова Юлия, Чепанова Анастасия и Финаев Никита. Экономика повседневной жизни - ближе, чем кажется :)',
     showButton: true,
     buttonText: 'Открыть бюджет'
