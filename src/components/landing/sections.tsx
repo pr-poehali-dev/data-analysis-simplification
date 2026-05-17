@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import BudgetCalculator from "./BudgetCalculator"
 import AnalyticsCharts from "./AnalyticsCharts"
 import Calculators from "./Calculators"
+import Tips from "./Tips"
 
 export const sections = [
   {
@@ -45,7 +46,7 @@ export const sections = [
   {
     id: 'tips',
     title: 'Советы.',
-    content: 'Как сократить необязательные расходы, формировать финансовую подушку и оценивать — выгодна ли рассрочка. Практика, не теория.'
+    extra: <Tips />
   },
   {
     id: 'about',
