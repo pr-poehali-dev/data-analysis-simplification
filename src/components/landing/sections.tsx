@@ -4,7 +4,7 @@ import BudgetCalculator from "./BudgetCalculator"
 export const sections = [
   {
     id: 'hero',
-    subtitle: <Badge variant="outline" className="text-white border-white/40">Учебный проект · Экономический факультет</Badge>,
+    subtitle: <Badge variant="outline" className="text-white border-white/40">Учебный проект · Экономический факультет · РУТ МИИТ</Badge>,
     title: "Экономика студента.",
     showButton: true,
     buttonText: 'Начать анализ бюджета'
