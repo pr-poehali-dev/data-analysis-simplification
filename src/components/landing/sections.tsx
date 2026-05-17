@@ -10,7 +10,7 @@ export const sections = [
     subtitle: <Badge variant="outline" className="text-white border-white/40">Учебный проект · Экономический факультет · РУТ МИИТ</Badge>,
     title: (
       <span>
-        <span style={{ color: '#22c55e' }}>Экономика </span>
+        <span style={{ color: '#22c55e', fontStyle: 'italic' }}>Экономика </span>
         <span style={{ color: '#ffffff' }}>студента!</span>
       </span>
     ),
